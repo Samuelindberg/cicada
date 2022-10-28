@@ -9,6 +9,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
 <link rel="preconnect" href="https://fonts.googleapis.com"> 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
 <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&family=Montserrat+Alternates&display=swap" rel="stylesheet">
     <title>Cicada</title>
 </head>
@@ -20,10 +24,10 @@
             </header>
             <nav>
                 <ul class="menu">
-                    <a href=""><li class="menu-item">Hem</li></a>
-                    <a href=""><li class="menu-item">Catering</li></a>
-                    <a href=""><li class="menu-item">Festvåning</li></a>
-                    <a href=""><li class="menu-item">Nöjda kunder</li></a>
+                    <a id="hem" href=""><li class="menu-item">Hem</li></a>
+                    <a href=""><li class="menu-item" id="catering">Catering</li></a>
+                    <a href=""><li class="menu-item" id="festvåning">Festvåning</li></a>
+                    <a href=""><li class="menu-item" id="nöjda-kunder">Nöjda kunder</li></a>
                     <a href=""><li class="menu-item">Frågor och svar</li></a>
                     <a href=""><li class="menu-item">Här levererar vi</li></a>
                     <a href=""><li class="menu-item">Kontakta oss</li></a>
@@ -32,7 +36,11 @@
         </div>
       
         <section class="first-page">
-            <img class="background-image" src="/img/page-1background.jpeg.webp" alt="">
+            <div class="intro-container">
+                <h1 class="introduction">Cicada erbjuder catering i hela Stockholm 7 dagar i veckan.</h1>
+            </div>
+             
+             <img class="background-image" src="img/Intro-img.jpg" alt="">
         </section>
     </div>
 </body>
