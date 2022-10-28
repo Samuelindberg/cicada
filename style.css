@@ -2,8 +2,40 @@
     padding:0;
     margin:0;
 }
-header{
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menu{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  
+    width:90vw;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+
+}
+.menu-items{
+    padding-right: 30px;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.logo{
+    padding-top: 20px;
+    font-family: montserrat;
+}
+.first-page{
     width: 100vw;
-    max-height:100px;
-    background-color: blue;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.background-image{
+    width: 100vw;
 }
