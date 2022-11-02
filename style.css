@@ -23,6 +23,7 @@ body{
     position: fixed;
     background-color: white;
     padding-bottom: 10px;
+    z-index: 300;
 }
 header{
     display: flex;
@@ -54,8 +55,7 @@ a{
     text-decoration: none;
     color: black;
     font-family: 'Josefin Sans', sans-serif;
-    border:1px solid black;
-    width: 100px;
+    width: 130px;
     text-align: center;
 }
 #hem-li{
@@ -73,7 +73,9 @@ a{
 }
 .background-image{
 width: 100vw;
-object-fit: contain;
+height: 100vh;
+object-fit: cover;
+
 
 }
 .introduction{
@@ -90,14 +92,6 @@ object-fit: contain;
     transform: translateX(-50%);
     left:50%;
 }
-
-.offer-text-container{
-    width: 70vw;
-    height: 70vh;
-    transform: translateX(-50%);
-    left:50%;  
-}
-
 .menu-item:hover{
     color:#8ba046;
 }
@@ -108,15 +102,46 @@ object-fit: contain;
 .offer{
     width: 100vw;
     height: 100vh;
-
 }
 
 .offer-img{
-overflow: hidden;
+   overflow: hidden;
    width: 100vw;
    height: 100vh;
    object-fit:cover;
- 
+   z-index: -3;
+}
+.offer-title{
+  padding-bottom: 20px;
+  font-size: 100px;
+}
+.offer-text-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    position: absolute;
+    height: 100vh;
+    font-family: montserrat;
+    color: white;
+  
+}
+.offer-text-container p{
+    max-width: 60vw;
+    font-size: 20px;
+}
+
+.offer-description{
+    width:100vw;
+    max-height:fit-content;
+}
+.offer-description-container{
+    height:300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 li:hover{
   color: #8ba046;
