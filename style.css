@@ -37,6 +37,7 @@ header{
 }
 nav{
     padding-top: 0;
+  
 }
 .menu{
     margin-top: 7px;
@@ -49,6 +50,8 @@ nav{
 .menu-items{
     padding-right: 30px;
     padding-left: 30px;
+}
+.menu-item{
     
 }
 a{
@@ -64,10 +67,16 @@ a{
     font-family: montserrat;
   
 }
+.catering{
+    width:40px;
+    height:130px;
+    display: none;
+}
 .first-page{
     z-index: -1;
     width: 100vw;
     height: 100vh;
+    border-bottom: 20px solid white;
 }
 .background-image{
 width: 100vw;
@@ -86,9 +95,10 @@ object-fit: cover;
     max-width: 900px;
     min-width: 900px;
     position: absolute;
-    top:45%;
+    top:40%;
     transform: translateX(-50%);
     left:50%;
+    
 }
 .menu-item:hover{
     color:#8ba046;
@@ -108,6 +118,7 @@ object-fit: cover;
    height: 100vh;
    object-fit:cover;
    z-index: -3;
+  
 }
 .offer-title{
   padding-bottom: 20px;
@@ -136,6 +147,9 @@ object-fit: cover;
     margin-top: 50px;
     font-size: 60px;
     color: #8ba046;
+    border-bottom: solid #8ba046 5px;
+    margin-bottom: 100px;
+    text-align: center;
 }
 
 .offer-description{
@@ -155,7 +169,45 @@ margin-bottom: 100px;
     padding: 0 60px 0 60px;
     font-family: montserrat;
     text-align: center;
+    
+}
+.explore-offers{
+    margin-top: 100px;
+    width: 230px;
+    padding: 10px 0 10px 0;
+    border-radius: 30px;
+    border:none;
+    background-color: white;
+    color: #8ba046;
+    border: solid 2px #8ba046;
+    font-size: 20px;
+
+}
+
+.explore-offers:hover{
+    background-color: #8ba046;
+    color: white;
 }
 li:hover{
   color: #8ba046;
+}
+
+.img-gallery{
+ height: 100vh;
+ width: 60vw;
+ margin: 0;
+ margin-top: 0px;
+}
+.gallery-container{
+  width: 100vw;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+
+}
+.gallery-img{
+    width: 400px;
+    padding: 5px;
 }
