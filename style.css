@@ -175,7 +175,6 @@ margin-bottom: 100px;
     
 }
 .explore-offers{
-
     width: 300px;
     padding: 15px 0 15px 0;
     margin-top: 100px;
@@ -190,12 +189,15 @@ margin-bottom: 100px;
 .button-container{
     display: flex;
     justify-content: center;
+    margin-bottom: 100px;
+
 }
 
 .explore-offers:hover{
     background-color: #8ba046;
     color: white;
     text-align: center;
+ 
     
 }
 li:hover{
@@ -203,7 +205,7 @@ li:hover{
 }
 
 .img-gallery{
- height: 100vh;
+
  width: 100vw;
  display: flex;
  flex-direction: column;
@@ -212,6 +214,7 @@ li:hover{
 .gallery-container{
   width: 100%;
   height: 60%;
+  margin-bottom: 50px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -225,7 +228,7 @@ li:hover{
 
 /* menu section */
 .menu-container{
-    
+   
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -236,22 +239,53 @@ li:hover{
     width: 100vw;
 }
 .menu-box{
-    padding-top: 30px;
-    max-width: 400px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-    width: 300px;
+    text-align: center;
+    padding: 10px;
+    width: 400px;
+    border-left:1px solid #8ba046;
+    border-right:1px solid #8ba046;
+   
+}
+.menu-box p {
+    border-top: #8ba046;
+    width:100%;
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
+  font-size: 30px;
+  
+  height: 100%;
+  
 }
 .menu-items{
-    /* width: 600px; */
+    max-width: 1300px;
     display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    flex-direction: column;
     justify-content: center;
+    flex-wrap: wrap;
+    padding: 40px;
+
 }
-.menu-box p{
+.menu-box h1{
+    width: 100%;
+    color: white;
+    background-color: #8ba046;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 40px;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.menu-suggestions h1{
+    font-family: 'Comfortaa', cursive;
+    letter-spacing: 5px;
+    font-size: 30px;
+    
+   
+}
+.menu-suggestions{
+   
     text-align: center;
 }
