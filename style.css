@@ -14,6 +14,7 @@ body{
     flex-direction: column;
     align-items: center;
 }
+
 .header{
     width: 100vw;
     height: 100px;
@@ -31,7 +32,7 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: montserrat;
+    font-family: 'Comfortaa', cursive;
     color:#8ba046;
 }
 .vegan{
@@ -43,7 +44,7 @@ nav{
 }
 .menu{
 
-    padding: 10px 0 10px 0;
+    padding: 5px 0 10px 0;
     margin-top: 10px;
     margin-bottom: 10px;
     width:100vw;
@@ -65,11 +66,13 @@ a{
     font-family: 'Josefin Sans', sans-serif;
     width: 130px;
     text-align: center;
+    padding-bottom: 5px;
+    
 }
 
 .logo{
     padding-top: 20px;
-    font-family: montserrat;
+    font-family: 'Comfortaa', cursive;
   
 }
 .catering{
@@ -80,9 +83,6 @@ a{
 .dropdown-menu-container{
     height: 200px;
     background-color: #8ba046;
-}
-.festvåning{
-    
 }
 .first-page{
     z-index: -1;
@@ -113,14 +113,6 @@ object-fit: cover;
     top:40%;
     transform: translateX(-50%);
     left:50%;
-    
-}
-.menu-item:hover{
-    color:#8ba046;
-}
-
-#hem:hover{
-    color: #8ba046;
 }
 .offer{
     width: 100vw;
@@ -195,7 +187,7 @@ margin-bottom: 100px;
     background-color: white;
     color: #8ba046;
     border: solid 2px #8ba046;
-    font-size: 20px;
+    font-size: 25px;
     margin: 0 auto;
 }
 .button-container{
@@ -209,11 +201,20 @@ margin-bottom: 100px;
     background-color: #8ba046;
     color: white;
     text-align: center;
+    transition: 200ms;
+    font-size: 30px;
  
     
 }
+li{
+    padding-bottom: 3px;
+    border-bottom: 1px solid #8ba046;
+}
 li:hover{
   color: #8ba046;
+  border-bottom: 2px solid #d1e984;
+  font-size: 18px;
+  transition: 200ms;
 }
 
 .img-gallery{
@@ -349,4 +350,65 @@ li:hover{
     font-size: 30px;
     font-family: 'Comfortaa', cursive;
     padding: 100px 0 0px 0;
+}
+/* festvåning sida */
+.container-party-intro{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container-party-intro img{
+    width: 100vw;
+    height: 100vh;
+}
+.container-party-intro h1{
+    font-size: 100px;
+}
+.img-overlay{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    position: absolute;
+    height: 100vh;
+    font-family: montserrat;
+    color: white;
+}
+
+.party-description{
+    padding: 50px 50px 50px 50px;
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+}
+.party-description h2{
+    font-family: 'Comfortaa', cursive;
+    font-size: 70px;
+}
+.party-contact{
+    text-align: start;
+}
+
+.party-description p {
+    margin-top:40px;
+    font-size: 35px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.party-description button{
+    margin-top: 90px;
+    border-radius: 70px;
+    width: 100%;
+    height: 100px;
+    font-size: 30px;
+    color: white;
+    border:none;
+    background-color: #8ba046;
+}
+.party-description button:hover{
+    background-color: #9fb45b;
+    font-size: 35px ;
+    transition: 300ms;
 }
