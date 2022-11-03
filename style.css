@@ -7,7 +7,7 @@ html{
     overflow-y: scroll;
 }
 body{
-   
+   height: 100vh;
 }
 .container{
     display: flex;
@@ -76,7 +76,7 @@ a{
     z-index: -1;
     width: 100vw;
     height: 100vh;
-    border-bottom: 20px solid white;
+    border-bottom: 10px solid white;
 }
 .background-image{
 width: 100vw;
@@ -90,6 +90,9 @@ object-fit: cover;
   text-align: center;
   color: white;
    font-family: 'Amatic SC', cursive;
+}
+.green-dagar{
+    color: #ccf152;
 }
 .intro-container{
     max-width: 900px;
@@ -147,7 +150,7 @@ object-fit: cover;
     margin-top: 50px;
     font-size: 60px;
     color: #8ba046;
-    border-bottom: solid #8ba046 5px;
+    border-bottom: solid #8ba046 3px;
     margin-bottom: 100px;
     text-align: center;
 }
@@ -172,21 +175,28 @@ margin-bottom: 100px;
     
 }
 .explore-offers{
+
+    width: 300px;
+    padding: 15px 0 15px 0;
     margin-top: 100px;
-    width: 230px;
-    padding: 10px 0 10px 0;
     border-radius: 30px;
     border:none;
     background-color: white;
     color: #8ba046;
     border: solid 2px #8ba046;
     font-size: 20px;
-
+    margin: 0 auto;
+}
+.button-container{
+    display: flex;
+    justify-content: center;
 }
 
 .explore-offers:hover{
     background-color: #8ba046;
     color: white;
+    text-align: center;
+    
 }
 li:hover{
   color: #8ba046;
@@ -194,20 +204,54 @@ li:hover{
 
 .img-gallery{
  height: 100vh;
- width: 60vw;
- margin: 0;
- margin-top: 0px;
+ width: 100vw;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
 }
 .gallery-container{
-  width: 100vw;
-  height: 60vh;
+  width: 100%;
+  height: 60%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-
-
 }
 .gallery-img{
     width: 400px;
+    object-fit: cover;
     padding: 5px;
+}
+
+
+/* menu section */
+.menu-container{
+    
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.menu-suggestions{
+    width: 100vw;
+}
+.menu-box{
+    padding-top: 30px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+}
+.menu-items{
+    /* width: 600px; */
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.menu-box p{
+    text-align: center;
 }
