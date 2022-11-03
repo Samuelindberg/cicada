@@ -3,8 +3,8 @@
     margin:0;
 }
 html{
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
+   scroll-behavior: smooth;
+   transition: 500ms;
 }
 body{
    height: 100vh;
@@ -53,12 +53,9 @@ nav{
     align-items: center;
     list-style-type: none;
 }
-.menu-items{
-    padding-right: 30px;
-    padding-left: 30px;
-}
-.menu-item{
-    
+.menu-bar{
+    border-bottom: #8ba046 1px solid;
+    padding-bottom: 5px;
 }
 a{
     text-decoration: none;
@@ -94,8 +91,6 @@ a{
 width: 100vw;
 height: 100vh;
 object-fit: cover;
-
-
 }
 .introduction{
   font-size: 90px;
@@ -169,50 +164,50 @@ object-fit: cover;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-margin-bottom: 100px;
+margin-bottom: 150px;
 }
 .offer-description p{
     font-size: 20px;
     padding: 0 60px 0 60px;
+
     font-family: montserrat;
     text-align: center;
+    line-height:40px
     
 }
 .explore-offers{
     width: 300px;
-    padding: 15px 0 15px 0;
+    height: 50px;
     margin-top: 100px;
     border-radius: 30px;
     border:none;
-    background-color: white;
-    color: #8ba046;
-    border: solid 2px #8ba046;
+    background-color: #8ba046;
+    color: white;
     font-size: 25px;
     margin: 0 auto;
+    font-family: 'Comfortaa', cursive;
+}
+#menu-button{
+    width:300px
 }
 .button-container{
     display: flex;
     justify-content: center;
     margin-bottom: 100px;
-
 }
-
 .explore-offers:hover{
-    background-color: #8ba046;
-    color: white;
+ 
     text-align: center;
     transition: 200ms;
-    font-size: 30px;
- 
-    
+    font-size: 28px;
 }
 li{
     padding-bottom: 3px;
-    border-bottom: 1px solid #8ba046;
+  
 }
 li:hover{
   color: #8ba046;
-  border-bottom: 2px solid #d1e984;
+
   font-size: 18px;
   transition: 200ms;
 }
@@ -282,6 +277,8 @@ li:hover{
     justify-content: center;
     flex-wrap: wrap;
     padding: 40px;
+    padding-right: 30px;
+    padding-left: 30px;
 
 }
 .menu-box h1{
@@ -317,7 +314,7 @@ li:hover{
     justify-content: center;
     align-items: center;
     height: 130vh;
-    margin-top: 100px;
+    margin-top: 50px;
     width: 100vw;
 }
 .menu-section-container img{
@@ -374,8 +371,26 @@ li:hover{
     width: 100vw;
     position: absolute;
     height: 100vh;
-    font-family: montserrat;
+    font-family: 'Josefin Sans', sans-serif;
     color: white;
+}
+.img-overlay button{
+    margin-top: 50px;
+    width: 250px;
+    height:50px;
+    border: none;
+    background-color: #8ba046;
+    border-radius: 30px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Comfortaa', cursive;
+}
+.img-overlay button:hover{
+    font-size: 23px;
+    transition: 200ms;
+}
+#party-button-link{
+    width: 250px;
 }
 
 .party-description{
@@ -383,10 +398,11 @@ li:hover{
     display: flex;
     justify-content: center;
     gap: 200px;
+    border-bottom: #8ba046 solid 2px;
 }
 .party-description h2{
     font-family: 'Comfortaa', cursive;
-    font-size: 70px;
+    font-size: 55px;
 }
 .party-contact{
     text-align: start;
@@ -394,11 +410,11 @@ li:hover{
 
 .party-description p {
     margin-top:40px;
-    font-size: 35px;
+    font-size: 30px;
     font-family: 'Josefin Sans', sans-serif;
 }
 .party-description button{
-    margin-top: 90px;
+    margin-top: 45px;
     border-radius: 70px;
     width: 100%;
     height: 100px;
@@ -408,7 +424,51 @@ li:hover{
     background-color: #8ba046;
 }
 .party-description button:hover{
-    background-color: #9fb45b;
     font-size: 35px ;
     transition: 300ms;
+}
+.party-gallery{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 60px;
+    gap:20px;
+}
+.party-gallery img{
+    height: 400px;
+}
+#party-title{
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 90px;
+    color: black;
+    margin: 30px 0 30px 0;
+}
+#party-title span{
+    border-bottom: #8ba046 1px solid;
+}
+.party-gallery-container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* kontaktsida */
+.container-contact{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container-contact h1{
+    margin-bottom: 200px;
+}
+.socials{
+    font-family: 'Comfortaa', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
 }
