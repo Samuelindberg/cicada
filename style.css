@@ -549,4 +549,18 @@ label{
     font-size: 20px;
     transition: 300ms;
 }
+.socials-face-insta{
+    border-bottom: #8ba046 solid 2px;
+    padding-bottom: 10px;
+}
+.socials-face-insta:hover{
+    padding-bottom: 10px;
+}
+.socials span
+{
+    border-bottom: #8ba046 solid 2px;
+}
+#mail{
+    padding-top: 10px;
+}
 
