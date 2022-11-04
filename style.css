@@ -465,10 +465,37 @@ li:hover{
 .container-contact h1{
     margin-bottom: 200px;
 }
+.contact-content{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.contact-content img{
+    width: 800px;
+}
 .socials{
+    margin-left: 50px;
     font-family: 'Comfortaa', cursive;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
+    height: 100%;
     gap: 50px;
+    border-left: #8ba046 solid 2px;
+    padding-left: 30px;
+    margin-right: 200px;
+}
+.subject{
+    width: 450px;
+}
+#subject{
+    width:100%;
+}
+#content{
+    width: 100%;
+    height: fit-content;
+}
+.subject label{
+    font-size: 25px;
 }
