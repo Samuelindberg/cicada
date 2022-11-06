@@ -480,13 +480,11 @@ li:hover{
     width: 800px;
 }
 .socials{
-    width: fit-content;
     font-family: 'Comfortaa', cursive;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    gap: 50px;
+    justify-content: space-between;
     border-left: #8ba046 solid 2px;
     padding-left: 30px;
 }
@@ -502,6 +500,7 @@ li:hover{
 .socials h2{
     color: #909090;
     border-bottom: #8ba046 2 px solid;
+    padding: 0;
 }
 
 #content{
@@ -563,6 +562,9 @@ label{
     padding-top: 10px;
  
 }
+.mail h2{
+    width: 60px;
+}
 .Mail h3{
     color: rgb(189, 191, 193);
 }
@@ -575,16 +577,19 @@ label{
 
 #insta-icon{
     width: 30px;
-    opacity: 0;
     height: 30px;
     transition: 100ms;
+  
+
 }
 .instagram{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
+ display: flex;
+ flex-direction: column;
+
+ justify-content: center;
+}
+.instagram a{
+    padding:0;
 }
 #facebook-icon{
     width: 30px;
