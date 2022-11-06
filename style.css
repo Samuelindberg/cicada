@@ -480,12 +480,12 @@ li:hover{
     width: 800px;
 }
 .socials{
+    width: fit-content;
     font-family: 'Comfortaa', cursive;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    height: 100%;
     gap: 50px;
     border-left: #8ba046 solid 2px;
     padding-left: 30px;
@@ -500,7 +500,7 @@ li:hover{
     font-family: 'Josefin Sans', sans-serif;
 }
 .socials h2{
-    color: rgb(169, 168, 167);
+    color: #909090;
     border-bottom: #8ba046 2 px solid;
 }
 
@@ -553,17 +553,45 @@ label{
     transition: 300ms;
 }
 .socials-face-insta{
-    border-bottom: #8ba046 solid 2px;
     padding-bottom: 10px;
 }
 .socials-face-insta:hover{
     padding-bottom: 10px;
 }
-.socials span
-{
-    border-bottom: #8ba046 solid 2px;
-}
+
 #mail{
     padding-top: 10px;
+ 
 }
+.Mail h3{
+    color: rgb(189, 191, 193);
+}
+.telefon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#insta-icon{
+    width: 30px;
+    opacity: 0;
+    height: 30px;
+    transition: 100ms;
+}
+.instagram{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+#facebook-icon{
+    width: 30px;
+    opacity: 0;
+    height: 30px;
+    transition: 300ms;
+}
+
+
 
