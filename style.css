@@ -10,6 +10,7 @@ body{
    height: 100vh;
 }
 .container{
+    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,6 +35,7 @@ header{
     align-items: center;
     font-family: 'Comfortaa', cursive;
     color:#8ba046;
+    margin-bottom: 10px;
 }
 .vegan{
     letter-spacing: 0.6em;
@@ -43,9 +45,7 @@ nav{
   
 }
 .menu{
-
-    padding: 5px 0 10px 0;
-    margin-top: 10px;
+    padding: 0px 0 10px 0;
     margin-bottom: 10px;
     width:100vw;
     display: flex;
@@ -82,15 +82,15 @@ a{
     background-color: #8ba046;
 }
 .first-page{
+    display: flex;
     z-index: -1;
     width: 100vw;
-    height: 100vh;
     border-bottom: 10px solid white;
 }
 .background-image{
 width: 100vw;
 height: 100vh;
-object-fit: cover;
+
 }
 .introduction{
   font-size: 90px;
@@ -102,8 +102,7 @@ object-fit: cover;
     color: #ccf152;
 }
 .intro-container{
-    max-width: 900px;
-    min-width: 900px;
+
     position: absolute;
     top:40%;
     transform: translateX(-50%);
@@ -115,7 +114,6 @@ object-fit: cover;
 }
 
 .offer-img{
-   overflow: hidden;
    width: 100vw;
    height: 100vh;
    object-fit:cover;
@@ -207,9 +205,8 @@ li{
 }
 li:hover{
   color: #8ba046;
-
-  font-size: 18px;
   transition: 200ms;
+  transform:scale(1.1);
 }
 
 .img-gallery{
@@ -447,9 +444,6 @@ li:hover{
     color: black;
     margin: 30px 0 30px 0;
 }
-#party-title span{
-    border-bottom: #8ba046 1px solid;
-}
 .party-gallery-container{
     height: 100vh;
     display: flex;
@@ -466,7 +460,6 @@ li:hover{
     flex-direction: column;
 }
 .container-contact h1{
-    margin-top: 250px;
     margin-bottom: 50px;
     font-family: 'PT Sans Narrow', sans-serif;
     font-size: 70px;
@@ -475,9 +468,11 @@ li:hover{
     display: flex;
     justify-content:space-evenly;
     width: 100%;
+
 }
 .contact-content img{
     width: 800px;
+    height: fit-content;
 }
 .socials{
     font-family: 'Comfortaa', cursive;
@@ -493,15 +488,10 @@ li:hover{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    
     margin: auto;
     font-family: 'Josefin Sans', sans-serif;
 }
-.socials h2{
-    color: #909090;
-    border-bottom: #8ba046 2 px solid;
-    padding: 0;
-}
+
 
 #content{
     font-family: 'Josefin Sans', sans-serif;
@@ -524,7 +514,6 @@ label{
     width: 100%;
     height: 300px;
     margin-top: 10px;
-    padding-bottom: 40px;
 }
 .form{
     display: flex;
@@ -551,52 +540,78 @@ label{
     font-size: 20px;
     transition: 300ms;
 }
-.socials-face-insta{
-    padding-bottom: 10px;
-}
-.socials-face-insta:hover{
-    padding-bottom: 10px;
-}
 
-#mail{
-    padding-top: 10px;
- 
-}
-.mail h2{
-    width: 60px;
-}
-.Mail h3{
+.mail h3{
     color: rgb(189, 191, 193);
 }
 .telefon{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+
+    color: #909090;
+    font-size: 12px;
+}
+
+.instagram{
+    display: flex;
     align-items: center;
 }
-
-#insta-icon{
-    width: 30px;
-    height: 30px;
-    transition: 100ms;
-  
-
+.mail {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
-.instagram{
- display: flex;
- flex-direction: column;
 
- justify-content: center;
-}
-.instagram a{
+.socials a{
     padding:0;
+    font-size: 20px;
+    height: 13px;
+    color: #909090;
+    padding: 0;
+    margin-left: 15px;
+}
+.socials{
+    padding: 30px 0 30px 0;
+    display: flex;
+    
+}
+
+.facebook{
+    display: flex;
+    align-items: center;
+}
+#insta-icon{
+    width: 25px;
+    transition: 200ms;
+    opacity: 0;
 }
 #facebook-icon{
-    width: 30px;
     opacity: 0;
-    height: 30px;
-    transition: 300ms;
+    width: 22px;
+    transition: 200ms;
 }
 
+/* hamburger meny */
+.hamburger-menu{
+    position:absolute;
+    left: 20px;
+}
+.hamburger-bar{
+    transition: 200ms;
+    width: 30px;
+    height: 3px;
+    margin: 5px;
+    background-color: black;
+    border-radius: 2px;
+}
+
+/* optimering för mindre skärmar */
+
+@media screen and (max-width:790px) {
+    nav {
+        display: none;
+    }
+    
+}
 
 
