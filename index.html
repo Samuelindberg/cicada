@@ -20,6 +20,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"> 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
 <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+
     <title>Cicada</title>
 </head>
 <body>
@@ -29,8 +30,18 @@
                 <h1 class="logo">GREEN CICADA </h1>
                 <h3 class="vegan">VEGAN</h3>
             </header>
-            <div class="hamburger-menu">
-                <div id="hamburger-icon">
+            <div id="hamburger-links">
+               <a href="index.html">Hem</a>
+               <a href="menu.html">Catering</a>
+               <a href="festlokal.html">Festvåning</a>
+               <a href="">nöjda kunder</a>
+               <a href="">Frågor och svar</a>
+               <a href="">Här levererar vi</a>
+               <a href="contact.html">Kontakta oss</a>
+
+            </div>
+            <div id="hamburger-menu">
+                <div onclick="menu()" id="hamburger-icon">
                     <div id="bar1" class="hamburger-bar"></div>
                     <div id="bar2" class="hamburger-bar"></div>
                     <div id="bar3" class="hamburger-bar"></div>
@@ -53,15 +64,15 @@
      
       
         <section class="first-page">
-            <div class="intro-container">
-                <h1 class="introduction">Cicada erbjuder catering i hela Stockholm <span class="green-dagar"> 7 dagar i veckan</span> .</h1>
+            <div class="intro-container"> 
+                <h1 class="introduction">Cicada erbjuder catering i hela Stockholm <span class="green-dagar"> 7 dagar i veckan</span> </h1>
+                
             </div>
-             <img class="background-image" src="img/iStock-882314790.jpg" alt="">
+            <img class="background-image" src="img/iStock-882314790.jpg" alt="">
         </section>
         <section class="offer">
              <div class="offer-text-container">
                 <h1 class="offer-title">VÅRT UTBUD</h1>
-               
              </div>
             <img src="/img/offer-img.jpg" alt="" class="offer-img">
             
@@ -199,5 +210,6 @@
             
         </div>
     </section>
+  <script src="/script.js"></script>
 </body>
 </html>
