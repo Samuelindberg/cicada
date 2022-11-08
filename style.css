@@ -612,7 +612,7 @@ label{
     width: 30px;
     height: 3px;
     margin: 5px;
-    background-color: black;
+    background-color: #8ba046;
     border-radius: 2px;
 }
 #hamburger-links{
@@ -622,7 +622,6 @@ label{
     justify-content: space-around;
     position: absolute;
     top: 0;
-    border: red 1px solid;
     width: 100vw;
     height: 100vh;
     background-color: #8ba046;
@@ -664,18 +663,32 @@ label{
     }
     .contact-content{
         flex-direction: column;
-        width: 100vw;
-        margin-top: 100px;
+        text-align: center;
+        
     }
     .contact-content img{
-      
-        width: 100%;
+        display: none;
     }
     .subject{
-        width: 100%;
+        width: 90%;
+    }
+    #subject{
+    
     }
     .message{
-       
+
+    }
+    .form h2{
+       padding-left: 30px;
+    }
+    .message button{
+        width: 150px;
+    }
+    .socials{
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        display: none;
     }
 }
 
